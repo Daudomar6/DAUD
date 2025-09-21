@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <main class="flex">
+      <article class="card flex">
+        <header class="card__header">
+          <img
+            src="./images/bg-pattern-card.svg"
+            alt="bg-pattern-card"
+            class="card__image"
+          />
+          <img
+            src="./images/image-victor.jpg"
+            alt="image-victor"
+            class="card__profile"
+          />
+        </header>
+
+        <section class="card__body flex-col">
+          <div class="card__name flex text-preset-1">
+            <h1>Victor Crest</h1>
+            <span>26</span>
+          </div>
+          <p class="text-preset-2">London</p>
+        </section>
+        <section class="card__line"></section>
+        <footer class="card__stat flex">
+          <div class="flowers flex-col">
+            <h1 class="text-preset-1">80K</h1>
+            <span class="text-preset-3">Followers</span>
+          </div>
+          <div class="Likes flex-col">
+            <h1 class="text-preset-1">803K</h1>
+            <span class="text-preset-3">Likes</span>
+          </div>
+          <div class="Photos flex-col">
+            <h1 class="text-preset-1">1.4K</h1>
+            <span class="text-preset-3">Photos</span>
+          </div>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

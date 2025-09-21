@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap");
+
+:root {
+  --Blue600: hsl(185, 75%, 39%);
+  --Navy950: hsl(229, 23%, 23%);
+  --Gray500: hsl(227, 10%, 46%);
+  --Gray100: hsl(225, 10%, 92%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-preset-1 {
+  font: 700 18px/22px "Kumbh Sans", sans-serif;
+  letter-spacing: 0px;
+}
+
+.text-preset-2 {
+  font: 400 14px/17px "Kumbh Sans", sans-serif;
+  letter-spacing: 0px;
+}
+.text-preset-3 {
+  font: 400 10px/12px "Kumbh Sans", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: var(--Blue600);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-top.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 60vw bottom 30vh, left 60vw top 40vh;
+}
+main {
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.card {
+  font-family: "Kumbh Sans", sans-serif;
+  max-width: 326px;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.5);
+}
+.card__image {
+  width: 100%;
+  height: 140px;
+  display: block;
+}
+.card__profile {
+  width: 96px;
+  height: 96px;
+  margin-top: -50px;
+  border-radius: 50%;
+  padding: 0;
+  border: 5px solid #fff;
+}
+
+.card__body {
+  gap: 8px;
+  max-height: 45px;
+  margin-bottom: 4px;
+}
+
+.card__name {
+  align-items: center;
+  gap: 9px;
+}
+
+.card__name span {
+  font-weight: 400;
+}
+
+.card__line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--Gray100);
+}
+
+.card__stat {
+  width: 249px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.flowers,
+.Likes,
+.Photos {
+  gap: 9px;
+}
+
+/* color */
+
+.card__name h1,
+.card__stat h1 {
+  color: var(--Navy950);
+}
+
+.card__name span,
+.card__body p,
+.card__stat span {
+  color: var(--Gray500);
+}
+
+@media (min-width: 48em) {
+  .card {
+    max-width: 350px;
+  }
+}
